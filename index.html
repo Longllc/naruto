@@ -1,0 +1,116 @@
+<style>html {
+    background-color: #FF8B60;
+}
+body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.naruto {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 15px solid #A55B41;
+    overflow: hidden;
+}
+.naruto .hair {
+    height: 90px;
+    background-color: #DCD768;
+    border-bottom: 5px solid #CEC968;
+}
+.naruto .hiddenleaf {
+    height: 60px;
+    background-color: #4D4747;
+}
+.naruto .hiddenleaf .plate {
+    width: 150px;
+    height: 45px;
+    background-color: #cecece;
+    margin: 0 auto;
+    padding: 3px 0 0 0;
+    vertical-align: middle;
+    border-radius: 10px;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+    overflow: hidden;
+}
+.naruto .hiddenleaf .plate:after {
+    content: "";
+    display: block;
+    width: 85px;
+    height: 60px;
+    margin-left: 100px;
+    margin-top: -5px;
+    background-color: #B5B9C3;
+    -webkit-transform: skew(-45deg);
+    -ms-transform: skew(-45deg);
+    transform: skew(-45deg);
+}
+.naruto .face {
+    position: absolute;
+    top: 0;
+    width: 290px;
+    height: 290px;
+    background-color: #F2C9BE;
+    border: 5px solid #DFAB9D;
+    border-radius: 50%;
+    z-index: -1;
+}
+.naruto .eye {
+      position: absolute;
+    left: 25%;
+    top: 170px;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border: 5px solid #638AAA;
+    border-radius: 50%;
+    z-index: 1;
+}
+.naruto .eye .eyelid-top,.naruto  .eye .eyelid-bottom {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #638AAA;
+    animation-duration: 20s;
+    animation-timing-function: ease-in;
+    animation-delay: 3s;</style>
+<div class="naruto">
+    <div class="hair"></div>
+    <div class="hiddenleaf">
+        <div class="plate"></div>
+    </div>
+    <div class="face"></div>
+     <div class="eye" style="float:left;">
+        <div class="eyelid-top"></div>
+        <div class="eyelid-bottom"></div>
+    </div>
+    <div class="eye" style="float:left; margin-left: 100px;">
+        <div class="eyelid-top"></div>
+        <div class="eyelid-bottom"></div>
+    </div>
+    <div class="mouth"></div>
+    <div class="whiskers">
+        <div class="whisker"></div>
+        <div class="whisker"></div>
+        <div class="whisker"></div>
+        <div class="whisker"></div>
+        <div class="whisker"></div>
+        <div class="whisker"></div>
+    </div>
+</div>
